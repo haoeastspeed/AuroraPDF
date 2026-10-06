@@ -1,9 +1,9 @@
 {
-  "version": "1.0.1",
-  "notes": "初版发布：结构化正文重排、页面管理、注释批注、OCR、密文遮蔽、数字签名、双内核与明暗主题。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.0.1/AuroraPDF-Setup-1.0.1.exe",
-  "sha256": "06c13f010e9f1c7c0e848e339b6ce8ea98853f1c8c6ae51117f90992e058cf83",
-  "size": 167768371,
+  "version": "1.1.0",
+  "notes": "新增软件内置自动更新：启动时自动检查（每天一次，可在设置关闭）、一键下载并校验 SHA256、覆盖安装。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.1.0/AuroraPDF-Setup-1.1.0.exe",
+  "sha256": "41591f78d16f20dd43eb739a1d382b3a4469d50284c1363aa8c98373d5a8f6ef",
+  "size": 167820802,
   "published": "2026-10-06",
   "mandatory": false
 }
