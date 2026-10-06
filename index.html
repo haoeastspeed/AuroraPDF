@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极光PDF Aurora PDF — 本地优先的智能 PDF 编辑器</title>
+<meta name="description" content="极光PDF（Aurora PDF）：本地优先、隐私安全、支持文本智能重排的 PDF 编辑器。页面管理、注释、OCR、密文遮蔽、数字签名，内置自动更新。">
+<style>
+:root{
+  --brand:#2A7A9C; --brand-dark:#1E5E7A; --brand-light:#E8F2F6; --accent:#3FA7C9;
+  --ink:#1B262C; --muted:#5C6B70; --bg:#F4F7F6; --card:#FFFFFF; --border:#E1E7E5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Microsoft YaHei UI","Microsoft YaHei","PingFang SC","Segoe UI",system-ui,sans-serif;
+  color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.brand img{width:34px;height:34px}
+.nav-links{display:flex;gap:26px;font-size:15px}
+.nav-links a{color:var(--muted)}
+.nav-links a:hover{color:var(--brand)}
+.btn{display:inline-block;padding:11px 24px;border-radius:8px;font-size:15px;font-weight:600;
+  transition:.18s;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark)}
+.btn-ghost{background:transparent;color:var(--brand);border-color:var(--brand)}
+.btn-ghost:hover{background:var(--brand-light)}
+.btn-sm{padding:8px 16px;font-size:14px}
+/* hero */
+.hero{background:linear-gradient(135deg,#1E5E7A 0%,#2A7A9C 55%,#3FA7C9 100%);color:#fff;padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:42px;line-height:1.2;margin-bottom:18px}
+.hero p{font-size:18px;color:#dcecf2;margin-bottom:30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero .btn-primary{background:#fff;color:var(--brand-dark)}
+.hero .btn-primary:hover{background:#eef6f9}
+.hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.7)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-shot{border-radius:10px;box-shadow:0 24px 60px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.25)}
+.hero-shot img{display:block;width:100%;border-radius:10px}
+/* sections */
+section{padding:72px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.sec-head h2{font-size:30px;margin-bottom:12px}
+.sec-head p{color:var(--muted);font-size:16px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.feature{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px}
+.feature .ic{width:44px;height:44px;border-radius:10px;background:var(--brand-light);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.feature .ic svg{width:24px;height:24px;stroke:var(--brand);fill:none;stroke-width:1.8}
+.feature h3{font-size:17px;margin-bottom:8px}
+.feature p{font-size:14px;color:var(--muted)}
+/* shot band */
+.shotband{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.shotband img{display:block;width:100%;border-radius:12px;border:1px solid var(--border);
+  box-shadow:0 16px 40px rgba(20,50,60,.12)}
+/* update */
+.update-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px;text-align:center}
+.step .n{width:38px;height:38px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.step h3{font-size:16px;margin-bottom:8px}
+.step p{font-size:14px;color:var(--muted)}
+/* download */
+.download{background:linear-gradient(135deg,#1E5E7A,#2A7A9C);color:#fff;border-radius:16px;
+  padding:48px;text-align:center}
+.download h2{font-size:28px;margin-bottom:10px}
+.download p{color:#d4e6ee;margin-bottom:26px}
+.download .meta{font-size:13px;color:#bcd6e0;margin-top:16px}
+.download .btn-primary{background:#fff;color:var(--brand-dark)}
+/* footer */
+footer{background:#162229;color:#9DB0B8;padding:48px 0 36px;margin-top:0}
+.foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:32px}
+footer h4{color:#fff;font-size:15px;margin-bottom:14px}
+footer a{color:#9DB0B8;font-size:14px;display:block;margin-bottom:8px}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #26343b;margin-top:32px;padding-top:20px;font-size:13px;color:#7d9099}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero h1{font-size:32px}
+  .features,.update-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .download{padding:32px 22px}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand"><img src="assets/logo.png" alt="极光PDF">极光PDF <span style="font-weight:400;color:var(--muted);font-size:14px">Aurora PDF</span></div>
+    <nav class="nav-links">
+      <a href="#features">功能</a>
+      <a href="#update">自动更新</a>
+      <a href="#download">下载</a>
+      <a href="https://github.com/haoeastspeed/AuroraPDF">发布仓库</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://github.com/haoeastspeed/AuroraPDF/releases/latest">下载</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>让 PDF 里凝固的文字<br>如极光般灵动</h1>
+      <p>本地优先、隐私安全的智能 PDF 编辑器。重建版面语义，改字不再错位；页面、注释、OCR、签名一应俱全。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/haoeastspeed/AuroraPDF/releases/latest">免费下载 Windows 版</a>
+        <a class="btn btn-ghost" href="#features">了解功能</a>
+      </div>
+    </div>
+    <div class="hero-shot"><img src="assets/shot-reader.png" alt="极光PDF 主界面"></div>
+  </div>
+</section>
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>为真正编辑 PDF 而生</h2>
+      <p>不止是白底盖字。极光PDF 重建版面语义并自研编辑内核，让修改、重排、批注都可靠。</p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h10M4 18h13"/></svg></div>
+        <h3>结构化正文重排</h3>
+        <p>真正移除原文字并按段落宽度智能重排；内容增多自动块推移、跨页连续续排，改字不再错位。</p>
+      </div>
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="12" height="18" rx="1"/><path d="M8 7h4M8 11h4M18 6v13l-2-1.6L14 19V6z"/></svg></div>
+        <h3>页面管理</h3>
+        <p>增删空白页、复制、旋转、拖拽排序、上移下移、合并与提取，全部支持撤销重做。</p>
+      </div>
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 5h9l5 5v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M14 5v5h5M7 14h8M7 17h6"/></svg></div>
+        <h3>注释批注</h3>
+        <p>高亮、下划线、删除线、便利贴、形状、箭头、自由文本、手绘，外观随包生成，其他阅读器可见。</p>
+      </div>
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-2"/><path d="M4 8l4 4 3-3 5 5M3 13l3-3 3 3"/></svg></div>
+        <h3>OCR 文字识别</h3>
+        <p>可插拔 RapidOCR 引擎，扫描件、图片页自动识别并叠加可选文本层，变为可搜索、可复制。</p>
+      </div>
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>密文遮蔽与签名</h3>
+        <p>Redaction 永久删除机密文字与像素；PKI 数字签名支持多人会签、完整性校验。</p>
+      </div>
+      <div class="feature">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M9 9l3 3 3-3"/></svg></div>
+        <h3>本地优先 · 双内核</h3>
+        <p>文件不上传、离线可用。默认 PDFium（Apache）许可干净，可切换 MuPDF；明暗双主题。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shotband">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>专业而克制的界面</h2>
+      <p>Ribbon 功能区、连续滚动 / 双页对开、缩略图与多面板，开箱即用。</p>
+    </div>
+    <img src="assets/shot-reader.png" alt="极光PDF 界面展示">
+  </div>
+</section>
+
+<section id="update">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>内置托管自动更新</h2>
+      <p>更新清单与安装包托管在公开仓库，软件可自动检查并安全升级。</p>
+    </div>
+    <div class="update-grid">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>检查新版本</h3>
+        <p>启动后按频率在后台静默比对版本，也可在功能区手动「检查更新」。</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>下载并校验</h3>
+        <p>后台下载最新安装包，按 SHA256 校验完整性，进度实时可见。</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>覆盖安装</h3>
+        <p>启动安装程序原地升级（同 AppId），配置与关联保留，无需卸载旧版。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="download">
+  <div class="wrap">
+    <div class="download">
+      <h2>下载极光PDF</h2>
+      <p>支持 Windows 10 / 11（64 位），免费使用，本地离线运行。</p>
+      <a class="btn btn-primary" href="https://github.com/haoeastspeed/AuroraPDF/releases/latest">获取最新版本</a>
+      <div class="meta">查看 <a href="https://github.com/haoeastspeed/AuroraPDF/releases" style="color:#cfe4ec">更新日志与历史版本</a> · 安装包经 SHA256 校验</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>极光PDF Aurora PDF</h4>
+        <a href="https://github.com/haoeastspeed/AuroraPDF/releases/latest">下载最新版</a>
+        <a href="#features">功能特性</a>
+        <a href="#update">自动更新</a>
+      </div>
+      <div>
+        <h4>资源</h4>
+        <a href="https://github.com/haoeastspeed/AuroraPDF">成品发布仓库（公开）</a>
+        <a href="https://github.com/haoeastspeed/AuroraPDF/issues">问题反馈</a>
+        <a href="https://github.com/haoeastspeed/AuroraPDF/blob/main/update.json">更新清单</a>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <a href="#">本地优先 · 文件不上传</a>
+        <a href="#">应用源码保留在私有仓库</a>
+        <a href="#">版权所有 haoeastspeed</a>
+      </div>
+    </div>
+    <div class="copy">© 2026 haoeastspeed · 极光PDF（Aurora PDF）。本仓库用于成品发布与自动更新托管；第三方组件版权归各自所有者。</div>
+  </div>
+</footer>
+</body>
+</html>
