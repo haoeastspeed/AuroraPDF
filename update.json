@@ -1,9 +1,9 @@
 {
-  "version": "1.1.0",
-  "notes": "新增软件内置自动更新：启动时自动检查（每天一次，可在设置关闭）、一键下载并校验 SHA256、覆盖安装。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.1.0/AuroraPDF-Setup-1.1.0.exe",
-  "sha256": "41591f78d16f20dd43eb739a1d382b3a4469d50284c1363aa8c98373d5a8f6ef",
-  "size": 167820802,
+  "version": "1.1.1",
+  "notes": "资源占用优化：修复翻页位图堆积、缩略图按需加载、限制计算线程，高缩放翻页内存峰值大幅下降。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.1.1/AuroraPDF-Setup-1.1.1.exe",
+  "sha256": "017976b7192514456627ce3faec90146984576c4952a871f81cd79cab1358a1b",
+  "size": 167830902,
   "published": "2026-10-06",
   "mandatory": false
 }
