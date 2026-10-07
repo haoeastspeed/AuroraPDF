@@ -2,8 +2,8 @@
   "version": "1.2.0",
   "notes": "本次更新：工具栏改为Office式箭头滑动导航，新增WPS风格就地文字编辑（识别原文块、沿用原字号直接修改），修复若干已知问题。",
   "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.2.0/AuroraPDF-Setup-1.2.0.exe",
-  "sha256": "a9cec9139eba1cb332521f6b2b280168c91e4488236b496b38a63b42eafb88c7",
-  "size": 167806584,
+  "sha256": "fe6b4d9a286becfaaacea42a3dcfe352e3730183cc9099a4a236f0b8e91c121b",
+  "size": 167844522,
   "published": "2026-10-07",
   "mandatory": false
 }
