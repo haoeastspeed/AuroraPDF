@@ -1,9 +1,9 @@
 {
-  "version": "1.2.1",
-  "notes": "本次更新：修复检查更新超时（多通道获取）、阅读区滚轮连续滚动、按钮悬停反馈更清晰、功能区箭头滑动防卡顿，并大幅加快软件启动速度。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.2.1/AuroraPDF-Setup-1.2.1.exe",
-  "sha256": "a064153579f99448e7508927b81c89defdf8c31caddb1a1aad39ac8b1929603d",
-  "size": 167846395,
+  "version": "1.2.2",
+  "notes": "本次更新：修复打开多个文件时主窗口残留上一文件内容、正文编辑出现文字叠加与编辑卡死问题；正文编辑改为更可靠的重写方式，块推移更稳定，编辑过程界面保持流畅响应。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v1.2.2/AuroraPDF-Setup-1.2.2.exe",
+  "sha256": "A9CDFBC488EDB1B0EA409B7E07997281C42869D91A86EE883F883384A5DD254C",
+  "size": 167831239,
   "published": "2026-10-08",
   "mandatory": false
 }
