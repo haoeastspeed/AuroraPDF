@@ -2,8 +2,8 @@
   "version": "2.1.0",
   "notes": "2.1.0：修复标题栏最小化/最大化/关闭按钮失效、缩略图切换后主视图不同步、位图对象已释放导致的崩溃；补齐页面编辑（新增空白页/复制/删除/旋转/移动/提取）；正文文字支持就地识别原文字块并按原字体大小直接修改，新增中文（CJK）字体嵌入；修复缩放不改变显示尺寸的问题并完善高 DPI 适配；新增设置与关于、PDF 文件格式关联、托管自动更新。",
   "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.1.0/AuroraPDF-Setup-2.1.0.exe",
-  "sha256": "05D6A0CBF4E87AC2320F891B6A3CE17FC6BC6EEACE8228A659C3496B1515231D",
-  "size": 16090912,
+  "sha256": "4605CE7904BEFAB5354D562EF0592C778C598D4FB66960185C28FEB15FAE0917",
+  "size": 16097333,
   "published": "2026-10-12",
   "mandatory": false
 }
