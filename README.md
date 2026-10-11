@@ -6,7 +6,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11%20x64-2A7A9C)
 ![Downloads](https://img.shields.io/github/downloads/haoeastspeed/AuroraPDF/total?color=3FA7C9)
 
-本地优先、隐私安全、支持**文本智能重排**的 PDF 编辑器。
+轻量、极速、本地优先的 PDF 编辑器。原生编译、启动快、占用低，正文文字可就地直接修改。
 
 - **产品主页**：https://haoeastspeed.github.io/AuroraPDF/
 - **下载最新版**：[Releases 页面](https://github.com/haoeastspeed/AuroraPDF/releases/latest)
@@ -15,26 +15,25 @@
 
 ## 功能
 
-- **结构化正文编辑**：重建版面语义，真正移除原文字并按段落宽度智能重排；内容增多自动块推移、跨页续排，改字不再错位。
-- **页面管理**：增删空白页、复制、旋转、拖拽排序、上移 / 下移、合并外部 PDF、提取页面，支持撤销重做。
-- **注释批注**：高亮 / 下划线 / 删除线 / 便利贴 / 矩形 / 椭圆 / 箭头 / 自由文本 / 铅笔手绘。
-- **OCR 文字识别**：扫描件、图片页自动识别，叠加可选文本层，变为可搜索 / 可复制。
-- **密文永久遮蔽（Redaction）**：文字内容流与图像像素真删，清理元数据等隐藏信息，删除不可恢复。
-- **PKI 数字签名**：自签 / 导入证书、可见与不可见签名、多人会签、完整性校验。
-- **文档增强**：水印、背景、页眉页脚、插入图片、区域擦除。
-- **双内核 / 双主题**：默认 PDFium（Apache-2.0，许可干净），可切换 MuPDF；明暗双主题、Ribbon 功能区。
+- **极速渲染查看**：PDFium 高清渲染，Native AOT 原生编译，启动快、高 DPI 清晰，内存 / CPU 占用低。
+- **正文文字就地编辑**：点击命中原有文字块，按原字体大小直接修改；支持中文（CJK 字体嵌入）与新增文字，不弹小框、不生成叠加小字。
+- **页面编辑**：新增空白页、复制、删除、旋转、移动排序、提取指定页面，缩略图右键即可操作。
+- **多视图浏览**：单页、连续滚动、双页对开与网格布局；滚轮与键盘翻页，缩略图支持键盘导航。
+- **格式关联**：一键将极光PDF 加入系统 PDF“打开方式”并注册文档类型（不显示 .exe 扩展名）。
+- **明暗双主题**：界面简洁、色调统一。
 
 ## 自动更新
 
 软件内置托管自动更新，更新清单为 [`update.json`](update.json)：
 
-- 启动后按频率在后台静默检查，也可在功能区手动「检查更新」。
+- 在「设置与关于」中一键检查更新。
 - 后台下载最新安装包并做 **SHA256 完整性校验**，随后启动安装程序原地覆盖升级（保留配置与文件关联）。
 
-清单地址（软件内使用）：
+清单地址（软件内使用，含多源回退）：
 
 ```
 https://raw.githubusercontent.com/haoeastspeed/AuroraPDF/main/update.json
+https://cdn.jsdelivr.net/gh/haoeastspeed/AuroraPDF@main/update.json
 ```
 
 ## 系统要求
@@ -50,8 +49,8 @@ https://raw.githubusercontent.com/haoeastspeed/AuroraPDF/main/update.json
 
 本仓库为**成品发布与自动更新托管**（公开）。应用源代码保留在**私有仓库**，不随本仓库公开。
 
-## 第三方组件与许可
+## 技术栈与第三方许可
 
-GUI：PySide6 / Qt（LGPL）；PDF 内核：pypdfium2 / PDFium（Apache-2.0），可选 PyMuPDF / MuPDF（AGPL-3.0 / 商业双许可）；结构处理：pypdf（BSD-3-Clause）；OCR：RapidOCR / ONNX Runtime；数字签名：pyhanko（MIT）。各组件版权归各自所有者，详见安装目录与随包许可声明。
+C# / .NET 10 + Avalonia UI；渲染与编辑：PDFium（通过 PDFiumCore，Apache-2.0 / BSD）；Native AOT 发布。各组件版权归各自所有者，详见安装目录 `LICENSES` 与随包许可声明。
 
 © 2026 haoeastspeed
