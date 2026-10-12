@@ -1,9 +1,9 @@
 {
-  "version": "2.2.1",
-  "notes": "2.2.1：修复高分辨率屏幕下的页面渲染缺陷——修复高DPI（150%缩放）时页面内容整体右移、右侧约10%被裁切（页眉/表格/文件名显示不全）；修复快速翻页或缩略图后台加载时单页视图偶发跨页拼凑（上半前一页、下半后一页）；渲染尺寸改用PDFium页面真实显示尺寸（含旋转、排除不可显示区域），缩放与打印更精确。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.1/AuroraPDF-Setup-2.2.1.exe",
-  "sha256": "EB55B77E2DF5EC797C7ED6A7C32445DCDA6E7E905C61526DEC57D065BB58A549",
-  "size": 16142432,
+  "version": "2.2.2",
+  "notes": "2.2.2：修复打开PDF后主显示区空白（现默认显示第一页）；修复文字编辑字号异常巨大（兼容文本矩阵缩放的中文PDF，编辑框与原文字号一致）；新增Ctrl+鼠标滚轮锚点缩放与Ctrl+1实际大小；新增单文件免安装版。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.2/AuroraPDF-Setup-2.2.2.exe",
+  "sha256": "211EB1CF01BA81AEA2ABB907D8BB0472BA77A1DE7C3DCEC53AE3D5CD8BF46391",
+  "size": 16144960,
   "published": "2026-10-12",
   "mandatory": false
 }
