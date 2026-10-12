@@ -1,9 +1,9 @@
 {
-  "version": "2.2.2",
-  "notes": "2.2.2：修复打开PDF后主显示区空白（现默认显示第一页）；修复文字编辑字号异常巨大（兼容文本矩阵缩放的中文PDF，编辑框与原文字号一致）；新增Ctrl+鼠标滚轮锚点缩放与Ctrl+1实际大小；新增单文件免安装版。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.2/AuroraPDF-Setup-2.2.2.exe",
-  "sha256": "211EB1CF01BA81AEA2ABB907D8BB0472BA77A1DE7C3DCEC53AE3D5CD8BF46391",
-  "size": 16144960,
+  "version": "2.2.3",
+  "notes": "2.2.3：首屏第一页加载提速（缩略图后台填充、引擎预热）；Ctrl+滚轮缩放更丝滑（手势中GPU位图缩放、停止后高清重渲染、精确锚点）；正文就地编辑改为金山模式（不弹框、透明贴合原字号/颜色/字体、点击处定位）；新增阅读区右键菜单；裁切交互完善（十字光标、可取消、即时刷新）。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.3/AuroraPDF-Setup-2.2.3.exe",
+  "sha256": "7E2B755DD0526FA3108074ED9C9396A8D665BDC219A4CD1FBD14EA2FB1C6EEA2",
+  "size": 16156532,
   "published": "2026-10-12",
   "mandatory": false
 }
