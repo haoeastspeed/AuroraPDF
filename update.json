@@ -1,9 +1,9 @@
 {
-  "version": "2.2.3",
-  "notes": "2.2.3：首屏第一页加载提速（缩略图后台填充、引擎预热）；Ctrl+滚轮缩放更丝滑（手势中GPU位图缩放、停止后高清重渲染、精确锚点）；正文就地编辑改为金山模式（不弹框、透明贴合原字号/颜色/字体、点击处定位）；新增阅读区右键菜单；裁切交互完善（十字光标、可取消、即时刷新）。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.3/AuroraPDF-Setup-2.2.3.exe",
-  "sha256": "7E2B755DD0526FA3108074ED9C9396A8D665BDC219A4CD1FBD14EA2FB1C6EEA2",
-  "size": 16156532,
+  "version": "2.2.4",
+  "notes": "2.2.4：修复 Ctrl+滚轮缩放与页面上下滚动冲突（隧道阶段拦截）；修复正文编辑框黑底遮挡文字（极简透明模板）；整行识别与编辑（点击一行任意位置选中整行，含每字独立对象的 PDF；提交时整行写回并沿用原字体/字号/颜色）；编辑态以页面背景色遮罩原行，消除文字重影。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.4/AuroraPDF-Setup-2.2.4.exe",
+  "sha256": "4CDE76322C92B8B53DDA4C4A0D3D787FFC932A5969183957A9B6128CA577FA7C",
+  "size": 16168481,
   "published": "2026-10-12",
   "mandatory": false
 }
