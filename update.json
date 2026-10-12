@@ -1,9 +1,9 @@
 {
-  "version": "2.2.0",
-  "notes": "2.2.0：对标专业 PDF 编辑器补齐核心能力——新增撤销/重做、全文搜索（区分大小写/全字匹配）、完整注释体系（高亮/下划线/删除线/波浪线、画笔涂鸦、矩形/椭圆/直线/箭头、便签与自由文本、橡皮擦）、插入图片、页面裁剪与恢复、手写签名、复制页面、文档打印；打开文件失败时保留当前文档（原子打开，不再清空已打开内容）；打印高 DPI 渲染移至后台线程避免界面假死，并修复打印句柄泄漏。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.0/AuroraPDF-Setup-2.2.0.exe",
-  "sha256": "B922157FD83B3DA586760E4AEB63ED9E47D2A1F8EC1CB39649CBBCDFD42258B1",
-  "size": 16133794,
+  "version": "2.2.1",
+  "notes": "2.2.1：修复高分辨率屏幕下的页面渲染缺陷——修复高DPI（150%缩放）时页面内容整体右移、右侧约10%被裁切（页眉/表格/文件名显示不全）；修复快速翻页或缩略图后台加载时单页视图偶发跨页拼凑（上半前一页、下半后一页）；渲染尺寸改用PDFium页面真实显示尺寸（含旋转、排除不可显示区域），缩放与打印更精确。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.2.1/AuroraPDF-Setup-2.2.1.exe",
+  "sha256": "EB55B77E2DF5EC797C7ED6A7C32445DCDA6E7E905C61526DEC57D065BB58A549",
+  "size": 16142432,
   "published": "2026-10-12",
   "mandatory": false
 }
