@@ -1,9 +1,9 @@
 {
-  "version": "2.3.0",
-  "notes": "2.3.0：新增离线 OCR 文字识别，扫描件/图片型 PDF 一键转为可搜索、可复制文本（PaddleOCR PP-OCRv5 中文模型，透明文本层、原文外观零变化）；支持单页/整份识别（整份自动跳过数字页）、进度显示与随时取消、整份仅一个撤销点；模型全部内置、断网可用。修复新建空白页插入图片被缩成小点的问题。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.3.0/AuroraPDF-Setup-2.3.0.exe",
-  "sha256": "97AEE42B925AE8A628E02C650A597E1B14D10B6B3CFFE222026BB6A10F4DE0D6",
-  "size": 39415750,
-  "published": "2026-10-12",
+  "version": "2.4.0",
+  "notes": "2.4.0：新增“文档工具箱”与文档安全能力——PDF 合并、拆分/提取（支持页码范围）、PDF 转图片/长图、图片转 PDF、PDF 转 TXT；加密 PDF 可凭密码打开（错误密码窗内重试）、移除密码解密另存；新增文档属性查看（页数/尺寸/版本/标题作者/加密权限）。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.4.0/AuroraPDF-Setup-2.4.0.exe",
+  "sha256": "C9197EC4A5AE8D7C3F7EBF94A9C4CCA5196D8AF105B2AF44400D83FA03B13B77",
+  "size": 39479995,
+  "published": "2026-10-13",
   "mandatory": false
 }
