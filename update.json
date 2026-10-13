@@ -1,9 +1,9 @@
 {
-  "version": "2.4.0",
-  "notes": "2.4.0：新增“文档工具箱”与文档安全能力——PDF 合并、拆分/提取（支持页码范围）、PDF 转图片/长图、图片转 PDF、PDF 转 TXT；加密 PDF 可凭密码打开（错误密码窗内重试）、移除密码解密另存；新增文档属性查看（页数/尺寸/版本/标题作者/加密权限）。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.4.0/AuroraPDF-Setup-2.4.0.exe",
-  "sha256": "C9197EC4A5AE8D7C3F7EBF94A9C4CCA5196D8AF105B2AF44400D83FA03B13B77",
-  "size": 39479995,
+  "version": "2.5.0",
+  "notes": "2.5.0：多标签文档——同一窗口打开多个 PDF，标签支持切换/关闭/拖动排序，命令行可多选文件一次打开；AOT 单文件瘦身（78.7MB→61.76MB），原生运行库压缩内嵌、首次释放预加载，启动更快。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.5.0/AuroraPDF-Setup-2.5.0.exe",
+  "sha256": "DEFCB6058F850848CD8E241D37C4575E8EE9E89EA002C972353C58CEC418E67E",
+  "size": 39492145,
   "published": "2026-10-13",
   "mandatory": false
 }
