@@ -1,9 +1,9 @@
 {
-  "version": "2.5.0",
-  "notes": "2.5.0：多标签文档——同一窗口打开多个 PDF，标签支持切换/关闭/拖动排序，命令行可多选文件一次打开；AOT 单文件瘦身（78.7MB→61.76MB），原生运行库压缩内嵌、首次释放预加载，启动更快。",
-  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.5.0/AuroraPDF-Setup-2.5.0.exe",
-  "sha256": "DEFCB6058F850848CD8E241D37C4575E8EE9E89EA002C972353C58CEC418E67E",
-  "size": 39492145,
+  "version": "2.5.1",
+  "notes": "2.5.1：顶部条精简——标题栏与标签栏合并为一行（浏览器/VSCode模式），去掉重复标题文字；标签外空白可拖动窗口、双击最大化；工具栏图标与间距收紧，顶部占用约146px降至88px，文档可视面积更大。",
+  "url": "https://github.com/haoeastspeed/AuroraPDF/releases/download/v2.5.1/AuroraPDF-Setup-2.5.1.exe",
+  "sha256": "8CE976F834C272AD4BE8BC640B261CE03F797C39BD7EF7D1F5FE77FECE71D105",
+  "size": 39505224,
   "published": "2026-10-13",
   "mandatory": false
 }
